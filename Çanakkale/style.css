@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("img/dur_yolcu.jpeg");
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .nav {
+    width: 100%;
+    height: 80px;
+    background: rgba(148, 8, 8, 0.748);
+    position: relative;
+    z-index: 2;
+}
+
+.nav .logo {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Rubik Doodle Shadow";
+    color: rgb(255, 255, 255);
+}
+
+.menubtn {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 10px;
+    min-width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+}
+
+.acilir-menu {
+    display: none;
+    background-color: black;
+    border: 2px solid rgb(98, 159, 203);
+}
+
+.acilir-menu a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .acilir-menu {
+    display: block;
+}
+
+
+.nav ul li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-family: "Roboto";
+}
+
+.nav ul li a:hover {
+    background: rgb(180, 82, 82);
+    border-radius: 70px;
+    transition: 0.1s;
+}
+
+.text-box {
+    position: absolute;
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 80px;
+    margin: auto;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+}
+
+.main {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.main:hover {
+    border: 2px solid rgba(62, 182, 22, 0.600);
+    background-color: rgba(62, 182, 22, 0.600);
+    transition: 0.5s;
+}
+
+.gezi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gezi h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #1311a0;
+    background-color: #5c8ab5;
+}
+
+.gezi h1::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: #7cf9f2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.gezi h1:hover::after {
+    width: 30%;
+}
+
+.yemek {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yemek h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #1311a0;
+    background-color: #5c8ab5;
+}
+
+.yemek h1::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: #7cf9f2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.yemek h1:hover::after {
+    width: 27%;
+}
+
+.kultur {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kultur h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #1311a0;
+    background-color: #5c8ab5;
+}
+
+.kultur h1::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: #7cf9f2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.kultur h1:hover::after {
+    width: 25%;
+}
+
+
+
+.card {
+    border: 7px solid #b55c5c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px 30px;
+}
+
+
+.card:hover {
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    margin-top: 0px;
+    color: rgb(168, 61, 148);
+    text-align: center;
+}
+
+.animate-title {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-content {
+    background-color: rgba(148, 8, 8, 0.748);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: auto;
+}
+
+.ikonlar img {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+@media only screen and (max-width: 700px) {
+    .header {
+        min-height: 90vh;
+    }
+
+    .text-box h1 {
+        font-size: 35px;
+    }
+
+    .text-box p {
+        font-size: 17px;
+    }
+
+    .nav ul li a {
+        font-size: 15px;
+    }
+
+    .nav .logo a {
+        font-size: 24px;
+    }
+
+    .main {
+        font-size: 14px;
+    }
+
+    .menubtn {
+        font-size: 16px;
+        min-width: 120px;
+    }
+
+    .gezi h1,
+    .yemek h1,
+    .kultur h1 {
+        font-size: 30px;
+    }
+
+    .gezi h1:hover::after {
+        width: 60%;
+    }
+
+    .yemek h1:hover::after {
+        width: 50%;
+    }
+
+    .kultur h1:hover::after {
+        width: 45%;
+    }
+
+    .gezi .card,
+    .yemek .card,
+    .kultur .card {
+        width: 100%;
+        margin: 15px 17px;
+    }
+
+    .footer-content {
+        padding: 30px;
+    }
+
+    .ikonlar img {
+        width: 50px;
+        height: 50px;
+    }
+}
